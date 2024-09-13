@@ -1,0 +1,14 @@
+{
+  "python.poetryPath": ".venv/bin/poetry",
+  "python.testing.cwd": "${workspaceFolder}",
+  "python.testing.pytestPath": ".venv/bin/pytest",
+  "python.testing.pytestArgs": [
+    "tests",
+    "--rootdir=${workspaceFolder}"
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "python.analysis.extraPaths": [
+    "./src"
+  ]
+}
