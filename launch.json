@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug config",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${workspaceRoot}",
+            "env": {
+                "PYTHONPATH": "./src"
+            },
+            "console": "integratedTerminal",
+            "purpose": [
+                "debug-test"
+            ],
+            "justMyCode": false
+        },
+        {
+            "name": "Module config",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pytest",
+            "cwd": "${workspaceRoot}",
+            "env": {
+                "PYTHONPATH": "./src"
+            },
+            "console": "integratedTerminal",
+            "justMyCode": false
+        }
+    ]
+}
